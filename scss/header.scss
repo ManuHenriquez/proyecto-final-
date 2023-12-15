@@ -1,0 +1,56 @@
+/*header*/
+
+@mixin anclas {
+    text-decoration: none;
+    color: black;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.9);
+    background-color: black;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px rgb(255, 0, 0);
+        font-size: 2.5rem;
+    }
+}
+
+.amarillo {
+    color: $color-yellow;
+}
+
+a {
+    @include anclas;
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.contacto:hover {
+    background-color: rgb(199, 193, 193);
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.encabezado li {
+    list-style-type: none;
+    display: inline-block;
+
+    a {
+        @include anclas;
+        margin: 10px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.5rem;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+    }
+}

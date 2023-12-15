@@ -1,0 +1,73 @@
+@media (max-width: 1023px) {
+    /*header*/
+  
+    .encabezado {
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+  
+      .boton {
+        display: none;
+      }
+    }
+  
+    /*banner*/
+  
+    .bannerContenido p {
+      font-size: 2.5rem;
+    }
+  
+    /*peliculas*/
+  
+    .peliculas {
+      margin: 5vh;
+      font-size: 1rem;
+  
+      h3 .peliculas p {
+        font-size: inherit;
+      }
+    }
+  
+    .contenedorPeliculas {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /*footer*/
+  
+    .footerContenido {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /*ajustes especificos para la vista movil*/
+  /*0 hasta 768px*/
+  
+  @media (max-width: 768px) {
+    nav {
+      text-align: center;
+  
+      ul {
+        display: block;
+        text-align: center;
+  
+        li {
+          display: block;
+          margin: 0 auto;
+  
+          a {
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  
+    /*peliculas*/
+  
+    .contenedorPeliculas, .tarjeta, .contedorPersonajes {
+      display: block;
+      grid-template-columns: 1fr;
+    }
+  }
+  
