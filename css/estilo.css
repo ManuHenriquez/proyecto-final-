@@ -268,6 +268,8 @@ a {
   margin-top: 10px;
 }
 
+/*Footer*/
+
 .footer {
   color: #fafafa;
   padding: 20px 0;
@@ -293,19 +295,6 @@ a {
   font-size: 1.2rem;
 }
 
-.redesSociales {
-  color: yellow;
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 1.5rem;
-}
-.redesSociales a {
-  margin: 5px 0;
-  font-size: 1.2rem;
-}
-.redesSociales a:hover {
-  color: yellow;
-}
 
 /*formulario*/
 .formContacto {
